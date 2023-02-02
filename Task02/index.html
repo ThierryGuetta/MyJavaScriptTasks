@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt(" Задание 1. Введите число:");
+      if (a % 2 == 0) alert("Число четное");
+      else alert("Нечетное");
+    </script>
+
+    <script>
+      let num = 41;
+      alert("Задание 2. Дано число: " + num);
+      let array = Array.from(num.toString(), Number);
+      let first = array[0];
+      let second = array[1];
+      first > second
+        ? alert(first + " больше чем " + second)
+        : alert(first + " меньше чем " + second);
+      if (first == second) alert("Цифры равны");
+    </script>
+
+    <script>
+      let r = prompt("Задание 3. Введите число R:");
+      let t = prompt("Введите число T:");
+      if (t > 0 && t <= 1) alert(r * r - Math.sin(r * r + t));
+      else if (t > 1) alert(t * t - Math.sin(r * r + t));
+      else alert(0);
+    </script>
+
+    <script>
+      let month = 12;
+      alert("Задание 4. Дан месяц - " + month);
+      if (month >= 9 && month <= 11) alert(month + "й месяц - осень");
+      else if (month >= 6 && month <= 8) alert(month + "й месяц - лето");
+      else if (month >= 3 && month <= 5) alert(month + "й месяц - весна");
+      else alert(month + "й месяц - зима");
+    </script>
+  </body>
+</html>
