@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = prompt("Задание 1. Введите строку: ");
+      str = str.toLowerCase();
+      let alphabet = "аяуюоеёэиы";
+      let count = 0;
+      for (let i = 0; i < alphabet.length; i++) {
+        for (let j = 0; j < str.length; j++) {
+          if (str[j] === alphabet[i]) count++;
+        }
+      }
+      alert("В строке: " + count + " гласных букв");
+
+      let str2 = prompt("Задание 2. Введите строку: ");
+      let count2 = 0;
+      for (let j = 0; j < str2.length; j++) {
+        if (str2[j] === " ") count2++;
+      }
+      alert("В строке: " + count2 + " пробелов");
+
+      let str3 = prompt("Задание 3. Введите строку: ");
+      let result = str3[0].toUpperCase();
+      for (let i = 1; i < str3.length; i++) {
+        result += str3[i];
+      }
+      alert("Строка с большой буквы: " + result);
+    </script>
+  </body>
+</html>

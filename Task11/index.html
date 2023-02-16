@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert("Задание 1. Цепочка чисел от  1 до 10");
+      for (let i = 1; i <= 10; i++) {
+        alert(i);
+      }
+
+      let n = prompt("Задание 2. Введите размерность цепочки чисел: ");
+      let count = 0;
+      while (n > 0) {
+        let c = prompt("Введите число: ");
+        if (c > 5 && c < 10) count++;
+        n--;
+      }
+      alert("В цепочке " + count + " чисел > 5 и < 10");
+
+      let m = prompt("Задание 3. Введите размерность цепочки чисел: ");
+      let min = Number.MAX_SAFE_INTEGER;
+      while (m > 0) {
+        let c = prompt("Введите число: ");
+        if (c < min) min = c;
+        m--;
+      }
+      if(min == Number.MAX_SAFE_INTEGER) min = null;
+      alert("Минимальное число в цепочке: " + min);
+
+      let a = prompt("Задание 4. Введите число А: ");
+      let N = prompt("Введите число N: ");
+      let result = 1 + Number(a);
+      for (let index = 2; index <= N; index++) {
+        if (index % 2 == 0) result += Math.pow(a, index);
+        else result -= Math.pow(a, index);
+      }
+      alert("Цепочка равна: " + result);
+    </script>
+  </body>
+</html>
